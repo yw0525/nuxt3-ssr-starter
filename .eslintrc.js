@@ -3,7 +3,11 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['plugin:vue/essential', 'airbnb-base', 'plugin:prettier/recommended'],
+  extends: [
+    '@nuxtjs/eslint-config-typescript',
+    'plugin:vue/essential',
+    'plugin:prettier/recommended'
+  ],
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
